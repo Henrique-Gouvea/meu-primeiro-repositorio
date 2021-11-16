@@ -1,0 +1,1 @@
+Trybe e uma escola de programação focada em back-end, front end, soft skills, e tudo que um programador precisa ter para se tornar um otimo profissional, utilizarei o repositorio Trybe-exercicios para armazenar todos os exercicios dados no curso.
