@@ -4,7 +4,7 @@ O que eu vou aprender na Trybe:
 -Bash
 -Git
 -Soft Skills
-CSS
-Autoconhecimento 
-Linux
+-CSS
+-Autoconhecimento 
+-Linux
 
