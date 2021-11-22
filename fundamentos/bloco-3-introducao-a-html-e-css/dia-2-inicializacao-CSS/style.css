@@ -1,0 +1,26 @@
+h1{
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+body{
+    font-size: 16px;
+    font-style:italic;
+    line-height: 200%;
+    text-align: center;
+}
+#amarelo{
+    text-decoration: underline wavy;
+    background-color: yellow;
+}
+#vermelho{
+    text-decoration: underline wavy;
+    background-color: red;
+}
+#marrom{
+    text-decoration: underline wavy;
+    background-color: brown;
+}
