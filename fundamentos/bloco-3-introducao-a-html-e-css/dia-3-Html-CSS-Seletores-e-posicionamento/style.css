@@ -27,6 +27,7 @@
   }
   .super-mario {
     width: 200px;
+    top: 300px;
     position: absolute;
     left: 0px;
     z-index: 1;
@@ -61,4 +62,27 @@
     position: absolute;
     left: 600px;
     top: 500px;
+  }
+
+  h1{
+    text-align: center;
+
+  }
+  .h1exer{
+    text-align: center;
+    padding-bottom: 500px ;
+
+  }
+
+  li{
+      list-style: none;
+  }
+
+  li:hover{
+    background-color: blue;
+    color: white;
+}
+  li:active{
+      font-family: 'Courier New', Courier, monospace;
+
   }
