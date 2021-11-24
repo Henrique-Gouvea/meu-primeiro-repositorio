@@ -6,7 +6,9 @@ main{
     text-align: center;
 
 }
-
+img{
+    border-radius: 10% 10%;
+}
 aside{
     background-image: url(https://www.mafiadomergulho.com.br/wp-content/uploads/2021/04/fundo-do-mar-site-copy.jpg);
     background-position: center;
