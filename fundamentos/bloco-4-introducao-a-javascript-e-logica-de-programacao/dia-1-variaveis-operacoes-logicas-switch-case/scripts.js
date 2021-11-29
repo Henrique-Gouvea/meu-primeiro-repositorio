@@ -14,7 +14,7 @@ console.log(a*b);
 console.log("A divisao de a/b e");
 console.log(a/b);
 
-console.log("-----------------------------------------");
+console.log("------------------EXERCICIO 2-----------------------");
 
 
 if(a>b){
@@ -29,7 +29,7 @@ else{
     console.log("Eles são iguais")
 }
 
-console.log("-----------------------------------------");
+console.log("------------------EXERCICIO 3-----------------------");
 
 
 if(a===b||a===c||b===c){
@@ -74,7 +74,7 @@ else if(c>a){
 
 
 
-console.log("-----------------------------------------");
+console.log("-----------------EXERCICIO 4------------------------");
 
 
 
@@ -91,7 +91,7 @@ else{
 
 
 
-console.log("-----------------------------------------");
+console.log("-----------------EXERCICIO 5------------------------");
 
 
 
@@ -107,7 +107,7 @@ else{
 
 
 
-console.log("-----------------------------------------");
+console.log("-----------------EXERCICIO 6------------------------");
 
 
 let pecaXadrez="ew";
@@ -129,7 +129,7 @@ switch (pecaXadrez.toLowerCase()){
 
 
 
-console.log("-----------------------------------------");
+console.log("-----------------EXERCICIO 7------------------------");
 
 
 const percent=55;
@@ -163,7 +163,7 @@ else{
 
 
 
-console.log("-----------------------------------------");
+console.log("-------------------EXERCICIO 8----------------------");
 
 
 
@@ -181,10 +181,32 @@ else{
 
 
 
-console.log("-----------------------------------------");
+console.log("--------------------EXERCICIO 9---------------------");
 
 
 
+if(a%2==1||b%2==1||c%2==1){
+    console.log((a%2==0||b%2==0||c%2==0));
+}
+else{
+    console.log(a%2==0||b%2==0||c%2==0);
+}
+
+
+console.log("--------------------EXERCICIO 10---------------------");
+
+let venda = 2;
+let custo = 1;
+
+if (custo<0||venda<0){
+    console.log("Valor nao pode ser abaixo de zero")
+}
+else{
+    console.log((venda-(custo+(0.2*custo)))*1000);
+}
 
 
 
+console.log("--------------------EXERCICIO 11---------------------");
+
+let salariobruto = 1500.10;
