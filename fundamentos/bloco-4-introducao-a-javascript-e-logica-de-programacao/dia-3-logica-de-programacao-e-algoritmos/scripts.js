@@ -1,33 +1,37 @@
-let n=3;
-line="";
+// let n=3;
+// line="";
 
-for (let i=0; i<n; i++){
-    line=line+"*";
-}
+// for (let i=0; i<n; i++){
+//     line=line+"*";
+// }
+// for(let i=0; i<n; i++){
+//     console.log(line);
+// }
+// console.log("--------------------------------Exercicio-2-------------------------------");
+
+// n=3;
+// line="";
+
+// for (let i=0; i<n; i++){
+//     line=line+"*";
+//     console.log(line);
+// }
+
+console.log("--------------------------------Exercicio-2-------------------------------");
+
+n=4
+let c=1;
+let l="";
+
 for(let i=0; i<n; i++){
-    console.log(line);
-}
-console.log("--------------------------------Exercicio-2-------------------------------");
-
-n=3;
-line="";
-
-for (let i=0; i<n; i++){
-    line=line+"*";
-    console.log(line);
-}
-
-console.log("--------------------------------Exercicio-2-------------------------------");
-
-n=3
-// let c=0;
-// let l=0;
-
-for(let l=1; l<=n; l++){
-    if(l=n){
-        console.log("*");
+    for(let index=1; index<n; index++){
+        if(c<=index){
+            l=l+" ";
+        }
+        else{
+            l=l+"*";  
+        }
     }
-    else{
-        console.log("1");
-    }
+    console.log(l);
+    c++;
 }
