@@ -9,7 +9,7 @@ for(let i=0; i<n; i++){
 }
 console.log("--------------------------------Exercicio-2-------------------------------");
 
-let =3;
+n=3;
 line="";
 
 for (let i=0; i<n; i++){
@@ -19,3 +19,15 @@ for (let i=0; i<n; i++){
 
 console.log("--------------------------------Exercicio-2-------------------------------");
 
+n=3
+// let c=0;
+// let l=0;
+
+for(let l=1; l<=n; l++){
+    if(l=n){
+        console.log("*");
+    }
+    else{
+        console.log("1");
+    }
+}
