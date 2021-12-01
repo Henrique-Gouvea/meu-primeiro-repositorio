@@ -109,4 +109,31 @@
 
   console.log("-------------------------Exercicio-1------------------------------------------- ");
 
+let player={
+     name : 'Marta',
+     lastName : 'Silva',
+     age : 34,
+     bestInTheWorld:[],
+     medals:{
+        golden : 2,
+        silver : 3, 
+     },
+};
 
+console.log("-------------------------Exercicio-Objetos-2------------------------------------------- ");
+
+player["fullName"]=player.name + " "+player.lastName;
+
+console.log("A jogadora " + player.fullName + " tem " + player.age + " anos de idade");
+
+console.log("-------------------------Exercicio-Objetos-3------------------------------------------- ");
+
+player.bestInTheWorld = [2006, 2007, 2008, 2009, 2010, 2018];
+
+console.log("-------------------------Exercicio-Objetos-4------------------------------------------- ");
+
+console.log("A jogadora " + player.fullName + " foi eleita a melhor do mundo por "+ player.bestInTheWorld.length + " vezes.");
+
+console.log("-------------------------Exercicio-Objetos-5------------------------------------------- ");
+
+console.log("A jogadora possui " + player.medals.golden + " medalhas de ouro e " + player.medals.silver + " de prata.");
