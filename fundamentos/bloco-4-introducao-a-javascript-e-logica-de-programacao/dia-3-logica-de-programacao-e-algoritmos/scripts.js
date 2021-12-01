@@ -20,18 +20,23 @@
 console.log("--------------------------------Exercicio-2-------------------------------");
 
 n=4
-let c=1;
-let l="";
+let coluna="";
+let linha="";
 
-for(let i=0; i<n; i++){
-    for(let index=1; index<n; index++){
-        if(c<=index){
-            l=l+" ";
+for(let colunai=0; colunai<n; colunai++){
+
+    for(let linhai=1; linhai<=n; linhai++){
+        
+        if(n>linhai && n>colunai){
+            linha=linha+" ";
         }
         else{
-            l=l+"*";  
+            linha=linha+"*";  
         }
     }
-    console.log(l);
-    c++;
+    console.log(linha);
+    linha="";
+    
 }
+
+
