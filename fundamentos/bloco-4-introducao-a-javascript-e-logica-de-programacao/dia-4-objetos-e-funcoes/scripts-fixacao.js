@@ -107,6 +107,23 @@
 //   console.log(ultimoMorador.nome); // Zoey
 
 
+
+
+//              PARA MEMORIZAR
+
+// let list = [4, 5, 6];
+
+// for (let i in list) {
+//    console.log(i); // "0", "1", "2",
+// }
+
+// for (let i of list) {
+//    console.log(i); // "4", "5", "6"
+// }
+
+
+
+
   console.log("-------------------------Exercicio-1------------------------------------------- ");
 
 let player={
@@ -137,3 +154,76 @@ console.log("A jogadora " + player.fullName + " foi eleita a melhor do mundo por
 console.log("-------------------------Exercicio-Objetos-5------------------------------------------- ");
 
 console.log("A jogadora possui " + player.medals.golden + " medalhas de ouro e " + player.medals.silver + " de prata.");
+
+
+
+
+
+console.log("-------------------------Exemplos -FOR/IN-1------------------------------------------- ");
+
+let cars = ['Saab', 'Volvo', 'BMW'];
+
+for (let index in cars) {
+  console.log(cars[index]);
+}
+
+
+
+console.log("-------------------------Exemplos -FOR/IN-2------------------------------------------- ");
+
+let carro = {
+    type: 'Fiat',
+    model: '500',
+    color: 'white',
+  };
+  
+  for (let index in carro) {
+    console.log(index, carro[index]);
+  }
+
+
+console.log("-------------------------Exemplos -FOR/IN-3------------------------------------------- ");
+
+//DIFERENCA FOR IN = POSICAO E FOR OF= VALOR
+
+let food = ['hamburguer', 'bife', 'acarajé'];
+
+for (let position in food) {
+    console.log(position);
+  };
+  //resultado: 0, 1, 2;
+
+for (let value of food) {
+  console.log(value);
+};
+//resultado: hamburguer, bife, acarajé;
+
+
+
+console.log("-------------------------Exercicio -FOR/IN-1------------------------------------------- ");
+
+
+let names = {
+    person1: 'João',
+    person2: 'Maria',
+    person3: 'Jorge' 
+  };
+
+  for(let i in names){
+      console.log("Olá "+names[i]);
+  }
+
+
+
+console.log("-------------------------Exercicio -FOR/IN-2------------------------------------------- ");
+
+let car = {
+    model: 'A3 Sedan',
+    manufacturer: 'Audi',
+    year: 2020
+  };
+
+for (let i in car){
+    console.log(i,car[i]);
+}
+
