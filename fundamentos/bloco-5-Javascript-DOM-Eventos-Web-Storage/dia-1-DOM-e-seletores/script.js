@@ -10,7 +10,7 @@ function mudancaEscritaP(){
     let tagP = document.getElementsByTagName("p")[0];
     tagP.innerText = "Me vejo em uma boa empresa";
 }
-mudancaEscritaP();
+
 
 //  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
 
@@ -32,17 +32,21 @@ function mudancaEscritaH1(){
 //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
 
 function maisculoP(){
-    let maiuscula = document.getElementsByTagName("p")[0];
-    console.log(maiuscula.toUpperCase());
+    let maiuscula = document.getElementsByTagName("p");
+    console.log(maiuscula);
+    for (i = 0; i < maiuscula.length; i =+ 1){
+        console.log(maiuscula[i]+7);
+    }
 }
+
 
 
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
 function showPConsole(){
-    console.log(document.querySelectorAll("p"));
-    for (i = 0; i < pconsole.length; i += 1){
-        console.log(pconsole[i]);
+    let pConsole = document.querySelectorAll("p");
+    for (i = 0; i < pConsole.length; i += 1){
+        console.log(pConsole[i]);
     }
 }   
 
