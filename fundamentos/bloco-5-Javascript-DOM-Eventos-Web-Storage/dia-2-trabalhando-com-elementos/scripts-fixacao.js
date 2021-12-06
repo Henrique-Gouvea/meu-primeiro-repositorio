@@ -33,3 +33,38 @@ console.log(document.getElementById("elementoOndeVoceEsta").nextSibling.nextSibl
 //Agora acesse o terceiroFilho a partir de pai .
 
 console.log(document.getElementById("pai").lastElementChild.previousElementSibling);
+
+//Crie um irmão para elementoOndeVoceEsta .
+
+let brotherElementoOndeVoceEsta = document.createElement("section");
+
+let pai = document.getElementById("pai");
+
+pai.appendChild(brotherElementoOndeVoceEsta);
+
+
+
+//Crie um filho para elementoOndeVoceEsta 
+
+let elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta");
+
+let sunElementoOndeVoceEsta = document.createElement("li");
+
+elementoOndeVoceEsta.appendChild(sunElementoOndeVoceEsta);
+
+
+
+//Crie um filho para primeiroFilhoDoFilho .
+
+let primeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho");
+
+FilhoDoPrimeiroFilhoDoFilho = document.createElement("h3");
+
+primeiroFilhoDoFilho.appendChild(FilhoDoPrimeiroFilhoDoFilho);
+
+console.log(pai);
+
+//A partir desse filho criado, acesse terceiroFilho .
+
+console.log(FilhoDoPrimeiroFilhoDoFilho.parentNode.parentElement.nextElementSibling);
+
