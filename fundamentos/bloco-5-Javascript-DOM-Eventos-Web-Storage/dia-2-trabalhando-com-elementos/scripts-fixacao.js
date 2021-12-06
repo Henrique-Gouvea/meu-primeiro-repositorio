@@ -66,5 +66,13 @@ console.log(pai);
 
 //A partir desse filho criado, acesse terceiroFilho .
 
-console.log(FilhoDoPrimeiroFilhoDoFilho.parentNode.parentElement.nextElementSibling);
+console.log(FilhoDoPrimeiroFilhoDoFilho.parentNode.parentNode.nextElementSibling);
 
+
+//          PERCORRER FILHO
+
+//Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
+elementoOndeVoceEsta.removeChild(primeiroFilhoDoFilho);
+
+document.getElementById("primeiroFilho").removeChild(elementoOndeVoceEsta);
