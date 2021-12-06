@@ -42,7 +42,11 @@ main.appendChild(sectionLeft);
 
 // Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
 
+let sectionRight = document.createElement("section");
 
+sectionRight.className = "right-content";
+
+main.appendChild(sectionRight);
 
 // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
 
