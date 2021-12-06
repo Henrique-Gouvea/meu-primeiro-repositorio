@@ -75,3 +75,15 @@ for(let i=0; i < numbers.length; i += 1){
 }
 
 // Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+
+
+function criaH3(){
+    let H = document.createElement("h3");
+    main.appendChild(H);
+}
+
+criaH3();
+criaH3();
+criaH3();
+
