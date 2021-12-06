@@ -26,7 +26,11 @@ main.appendChild(section);
 
 // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
+let p = document.createElement("p");
 
+p.innerText = "Esse exercicio e para aprendizado e fxacao do DOM";
+
+section.appendChild(p);
 
 // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
 
