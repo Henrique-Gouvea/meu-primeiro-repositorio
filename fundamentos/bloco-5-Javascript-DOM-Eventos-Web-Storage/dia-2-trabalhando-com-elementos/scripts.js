@@ -4,15 +4,25 @@ let title = document.createElement("h1");
 
 title.innerText = "Exercício 5.2 - JavaScript DOM";
 
-document.querySelector("body").appendChild(title);
+let body = document.querySelector("body");
+
+body.appendChild(title);
 
 // Adicione a tag main com a classe main-content como filho da tag body ;
 
+let main = document.createElement("main");
 
+main.className = "main-content";
+
+body.appendChild(main);
 
 // Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
 
+let section = document.createElement("section");
 
+section.className = "center-content";
+
+main.appendChild(section);
 
 // Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
