@@ -32,12 +32,14 @@ function mudancaEscritaH1(){
 //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
 
 function maisculoP(){
-    let maiuscula = document.getElementsByTagName("p");
+    let maiuscula = document.getElementsByTagName(String("p"));
     console.log(maiuscula);
     for (i = 0; i < maiuscula.length; i =+ 1){
-        console.log(maiuscula[i]+7);
+        maiuscula[i].innerText = (maiuscula[i].innerText).toUpperCase();
+        console.log(maiuscula[i].innerText);
     }
 }
+maisculoP();
 
 
 
