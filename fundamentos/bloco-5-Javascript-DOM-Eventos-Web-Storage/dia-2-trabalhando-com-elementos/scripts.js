@@ -78,12 +78,13 @@ for(let i=0; i < numbers.length; i += 1){
 
 
 
-function criaH3(){
+function criaH3(valor){
     let H = document.createElement("h3");
     main.appendChild(H);
+    H.innerText = valor;
 }
 
-criaH3();
-criaH3();
-criaH3();
+criaH3("Henrique");
+criaH3("Trybe");
+criaH3("Test");
 
