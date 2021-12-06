@@ -34,7 +34,7 @@ sectionCenter.appendChild(p);
 
 // Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
 
-let sectionLeft = document.createElement(section);
+let sectionLeft = document.createElement("section");
 
 sectionLeft.className = "left-content";
 
@@ -50,7 +50,13 @@ main.appendChild(sectionRight);
 
 // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
 
+let image = document.createElement("img");
 
+image.setAttribute("src", "https://picsum.photos/200");
+
+image.className = "smal-image";
+
+sectionLeft.appendChild(image);
 
 // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 
