@@ -45,11 +45,11 @@ maisculoP();
 
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
-function showPConsole(){
-    let pConsole = document.querySelectorAll("p");
-    for (i = 0; i < pConsole.length; i += 1){
-        console.log(pConsole[i]);
-    }
-}   
+// function showPConsole(){
+//     let pConsole = document.querySelectorAll("p");
+//     for (i = 0; i < pConsole.length; i += 1){
+//         console.log(pConsole[i]);
+//     }
+// }   
 
 
