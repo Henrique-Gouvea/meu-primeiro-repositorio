@@ -99,8 +99,21 @@ createButtonFriday();
 // Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
 // É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
 
+function alterFriday(){
+    let friday = [4, 11, 18, 25];
+    let fridayDay = document.getElementsByClassName('day friday');
 
+    for(let i = 0; i < fridayDay.length; i += 1){
+        if(friday[i] === friday[i] + " Its friday-day"){
+            fridayDay[i].innerText = friday[i];
+        }    
+        else{
+            fridayDay[i].innerText = friday[i] + " Its friday-day";
+        }
+    }
+}
 
+document.querySelector('#btn-friday').addEventListener('click', alterFriday);
 
 // Exercício 6:
 // Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
