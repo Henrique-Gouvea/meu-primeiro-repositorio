@@ -120,6 +120,19 @@ document.querySelector('#btn-friday').addEventListener('click', alterFriday);
 // Dica - Propriedade: event.target .
 
 
+function zoomMouseOver(){
+    event.target.style.fontSize = '25px';
+    event.target.style.color = 'red';
+;}
+function zoomMouseOut(){
+    event.target.style.fontSize = '20px';
+    event.target.style.color = '#777';
+}
+
+
+let daysZoom = document.getElementById("days");
+daysZoom.addEventListener('mouseover', zoomMouseOver);
+daysZoom.addEventListener('mouseout', zoomMouseOut);
 
 
 // Exercício 7:
