@@ -52,7 +52,6 @@ function createDaysOfTheWeek() {
 function createButtonFeriados(){
     let button = document.createElement("button");
     button.innerText = "Feriados";
-    button.classList = "buttons-container";
     button.id = "btn-holiday";
     let divButtonsContainer = document.querySelector(".buttons-container");
     divButtonsContainer.appendChild(button);
@@ -87,8 +86,14 @@ button.addEventListener("click", eventFeriados);
 // Adicione a este botão o ID "btn-friday" .
 // Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 
+function createButtonFriday(){
+    let buttonFriday = document.createElement("button");
+    buttonFriday.id = "btn-friday";
+    buttonFriday.innerText = "Sexta-feira";
+    document.getElementsByClassName("buttons-container")[0].appendChild(buttonFriday);
+}
 
-
+createButtonFriday();
 
 // Exercício 5:
 // Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
