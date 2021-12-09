@@ -102,9 +102,10 @@ createButtonFriday();
 function alterFriday(){
     let friday = [4, 11, 18, 25];
     let fridayDay = document.getElementsByClassName('day friday');
-
+    let fridayDayOne = document.getElementsByClassName('day friday')[0].textContent;
+    console.log(fridayDayOne.length);
     for(let i = 0; i < fridayDay.length; i += 1){
-        if(friday[i] === friday[i] + " Its friday-day"){
+        if(2 < (fridayDayOne.length)){
             fridayDay[i].innerText = friday[i];
         }    
         else{
