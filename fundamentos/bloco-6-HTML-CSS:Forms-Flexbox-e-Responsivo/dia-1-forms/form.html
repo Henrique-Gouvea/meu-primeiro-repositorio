@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Criando seu curriculo</h1>
-    <fieldset>
+    <form method="get" action="" id="form-dados">
         <h2>Dados Pessoais</h2>
         <label for="nome-completo">Nome Completo: 
             <input type="text" name="nome" id="nome-completo" required maxlength="40">
@@ -41,8 +41,10 @@
         <label for="tipo2">
             <input type="radio" name="input-tipo-residencia" id="tipo2" value="ap">Apartamento
         </label>
-    </fieldset>
-    <fieldset>
+        <br>
+        <button type="submit" id="btn-enviar-dados">Enviar</button>
+    </form>
+    <form method="get" action="" id="form-emprego">
         <h2>Ultimo emprego</h2>
         <textarea name="resumoCurriculo1" id="resumo1" cols="30" rows="10" maxlength="1000" placeholder="Faça um resumo de sua ultima experiencia" required></textarea>
         <br>
@@ -57,7 +59,11 @@
         <label for="data-inicio">Data de inicio
             <input type="date" name="inicio" id="data-inicio" required>
         </label>
-    </fieldset>
+        <br><br>
+        <button type="submit" id="btn-enviar-emprego">Enviar</button>
+    </form>
+    <div id="dados"></div>
+    <div id="emprego"></div>
     <script src="script.js"></script>
 </body>
 </html>
