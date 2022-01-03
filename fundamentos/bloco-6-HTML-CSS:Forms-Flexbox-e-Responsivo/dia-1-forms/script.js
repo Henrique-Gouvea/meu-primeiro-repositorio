@@ -6,7 +6,7 @@ function addEstadosInput(){
         console.log(arrayEstados[i]);
         options = document.createElement("option");
         options.innerText = arrayEstados[i];
-        options.value = arrayEstados[i];
+        options.value = arrayEstados[i].toLowerCase();
         inputEstados.appendChild(options);
     }
 }
