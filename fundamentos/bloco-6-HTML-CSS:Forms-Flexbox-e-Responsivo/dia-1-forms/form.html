@@ -10,6 +10,7 @@
 <body>
     <h1>Criando seu curriculo</h1>
     <fieldset>
+        <h2>Dados Pessoais</h2>
         <label for="nome-completo">Nome Completo: 
             <input type="text" name="nome" id="nome-completo" required maxlength="40">
         </label>
@@ -27,11 +28,11 @@
         </label>
         <br>
         <label for="cidade">Cidade: 
-            <input type="text" name="cidade" id="cidade">
+            <input type="text" name="cidade" id="cidade" required>
         </label>
         <br>
         <label for="input-estado">Selecione o Estado: 
-            <select name="estado" id="input-estado"></select>
+            <select name="estado" id="input-estado" required></select>
         </label>
         <br>
         <label for="tipo1">
@@ -39,6 +40,18 @@
         </label>
         <label for="tipo2">
             <input type="radio" name="input-tipo-residencia" id="tipo2" value="ap">Apartamento
+        </label>
+    </fieldset>
+    <fieldset>
+        <h2>Ultimo emprego</h2>
+        <textarea name="resumoCurriculo1" id="resumo1" cols="30" rows="10" maxlength="1000" placeholder="Faça um resumo de sua ultima experiencia" required></textarea>
+        <br>
+        <label for="input-cargo">Cargo
+            <input type="text" id="input-cargo" maxlength="40" required>
+        </label>
+        <br>
+        <label for="input-descricao">Descrição cargo
+            <input type="text" id="input-descricao" maxlength="500" required>
         </label>
     </fieldset>
     <script src="script.js"></script>
