@@ -33,3 +33,13 @@ h2{
 #input-estado{
     width: 259px;
 }
+
+#dados{
+    display: block;
+    position: absolute;
+    width: 350px;
+    top: 400px;
+    left: 100px;
+    padding-left: 20px;
+    background-color: antiquewhite;
+}
