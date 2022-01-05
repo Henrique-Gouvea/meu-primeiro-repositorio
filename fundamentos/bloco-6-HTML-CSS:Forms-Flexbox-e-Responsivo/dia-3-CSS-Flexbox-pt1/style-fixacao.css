@@ -10,11 +10,39 @@
     height: 60px;
     margin: 10px 5px;
     text-align: center;
-    width: 30%;
+    width: 3%;
   }
 
   .box-container {
     background-color: #0fa36b;
     display: flex;
     /* ADICIONE AQUI SEUS TESTES */
+    flex-direction: row;
   }
+
+  .box-container1 {
+    background-color: #0fa36b;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .box-container2 {
+    background-color: #0fa36b;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-container3 {
+    background-color: #0fa36b;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box-container4{
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    /* QUEBRA DE PAGINA POR PADRAO ELE NAO QUEBRA PASSA POR CIMA DA DIV */
+  }
+
+  /* FLEX-FLOW = ROW WRAP JUNCAO DE FLEX-WRAP E FLEX-DIRECTION */
