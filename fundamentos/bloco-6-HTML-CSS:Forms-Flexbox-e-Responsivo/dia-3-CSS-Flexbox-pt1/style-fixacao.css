@@ -2,6 +2,10 @@
     display: flex;
 }
 
+h1{
+  text-align: center;
+}
+
 .box {
     color: #9069EF;
     background-color: rgb(243, 243, 243);
@@ -163,4 +167,66 @@
     background-color: #0fa36b;
     display: flex;
     align-items: baseline;
+  }
+
+  .box3 {
+    color: #9069EF;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid #232525;
+    font-size: 50px;
+    min-height: 60px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 30%;
+  }
+
+  .box-containerA {
+    /* ADICIONE AQUI SEUS TESTES */
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+  .box-containerB {
+    align-content: center;
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+
+  .box-containerC {
+    align-content: flex-start;
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+  .box-containerD {
+    align-content: flex-end;
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+  .box-containerE {
+    align-content: stretch;
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+  .box-containerF {
+    align-content: space-around;
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+  }
+  .box-containerG {
+    align-content: space-between;
+    background-color: #0fa36b;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
   }
