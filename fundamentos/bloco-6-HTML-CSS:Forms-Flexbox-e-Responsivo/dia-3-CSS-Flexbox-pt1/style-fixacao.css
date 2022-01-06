@@ -46,3 +46,55 @@
   }
 
   /* FLEX-FLOW = ROW WRAP JUNCAO DE FLEX-WRAP E FLEX-DIRECTION */
+
+  .box1 {
+    color: #9069EF;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid #232525;
+    font-size: 50px;
+    height: 60px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 20%;
+  }
+
+  .box-container5{
+    background-color: #0fa36b;
+    display: flex;
+  }
+
+  .box-container6{
+    background-color: #0fa36b;
+    display: flex;
+    justify-content: center;
+  }
+
+  .box-container7{
+    background-color: #0fa36b;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-container8{
+    background-color: #0fa36b;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .box-container9{
+    background-color: #0fa36b;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .box-container10{
+    background-color: #0fa36b;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .box-container11{
+    background-color: #0fa36b;
+    display: flex;
+    justify-content: space-evenly;
+  }
