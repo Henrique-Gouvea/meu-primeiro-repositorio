@@ -28,3 +28,65 @@ aside a{
 footer{
     padding-top: 50px;
 }
+
+@media screen and (max-width: 1300px) and (min-width:936px){
+
+    .aside{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        font-size: 30px;
+    }
+    .header{
+        font-size: xx-large;
+    }
+    .nav{
+        display: none;
+    }
+    h2, h3{
+        font-size: 3em;
+    }
+    img{
+        width: 500px;
+    }
+    p{
+        font-size: 2em;
+    }
+    #referencia{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 936px){
+    main{
+        text-align: left;
+        font-size: 35px;
+        width: 500px;
+        margin-left: 5%;
+    }
+    .aside{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        font-size: 30px;
+    }
+    #referencia{
+        display: none;
+    }
+    img{
+        width: 100%;
+        margin: 5%;
+    }
+    #header{
+        text-align: center;
+    }
+    .nav{
+        display: none;
+    }
+    .aside{
+        width: 100%;
+        margin-right: 5%;
+    }
+}
