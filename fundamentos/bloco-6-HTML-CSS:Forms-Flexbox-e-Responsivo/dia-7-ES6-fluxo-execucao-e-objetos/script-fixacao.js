@@ -1,3 +1,5 @@
+//-------------------Objetos: Parte I - Adicionando novas chaves (keys)
+
 // const sumA = (value1, value2) => value1 + value2;
 
 // console.log(sumA(20,20));
@@ -91,17 +93,67 @@
 
 
 
-const register = {
-    firstName: 'Henrique',
-    secondName: 'Gouvea',
-    job: 'Student',
-}
+// const register = {
+//     firstName: 'Henrique',
+//     secondName: 'Gouvea',
+//     job: 'Student',
+// }
 
-const addObject = (object, newKey, value) => {
-    object[newKey] = value;
-    return object;
-}
+// const addObject = (object, newKey, value) => {
+//     object[newKey] = value;
+//     return object;
+// }
 
-console.log(register);
-console.log(addObject(register, 'sport', 'capoeira'));
-console.log(addObject(register, 'age', '29'));
+// console.log(register);
+// console.log(addObject(register, 'sport', 'capoeira'));
+// console.log(addObject(register, 'age', '29'));
+
+
+//=----------------------------------Objetos: Parte II - Object.keys
+
+
+// const coolestTvShow = {
+//     name: "BoJack Horseman",
+//     genre: "adult animation",
+//     createdBy: "Raphael Bob-Waksberg",
+//     favoriteCharacter: "Princess Carolyn",
+//     quote: "Princess Carolyn always lands on her feet.",
+//     seasons: 6,
+//   };
+  
+  
+//   console.log(Object.keys(coolestTvShow));
+  
+
+// Pratica
+//    Tente criar uma função que exiba as habilidades do objeto student . Cada habilidade deve ser exibida no formato "Nome da habilidade, Nível: valor da chave referente à habilidade
+
+
+
+
+  const student1 = {
+    Html: 'Muito Bom',
+    Css: 'Bom',
+    JavaScript: 'Ótimo',
+    SoftSkills: 'Ótimo',
+  };
+  
+  const student2 = {
+    Html: 'Bom',
+    Css: 'Ótimo',
+    JavaScript: 'Ruim',
+    SoftSkills: 'Ótimo',
+    Git: 'Bom', // chave adicionada
+  };
+
+  const skills = (student, objectStudent) =>{
+    const arraySkills = Object.keys(objectStudent);
+    console.log(student);
+    for (index in arraySkills){
+        console.log(`Skill: ${arraySkills[index]} Nivel: ${objectStudent[arraySkills[index]]}`)
+    }
+  }
+
+skills('student1', student1);
+skills('student2', student2);
+
