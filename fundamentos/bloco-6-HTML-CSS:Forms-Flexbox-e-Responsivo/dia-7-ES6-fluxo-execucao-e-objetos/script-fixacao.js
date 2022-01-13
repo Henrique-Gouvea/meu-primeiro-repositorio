@@ -131,29 +131,46 @@
 
 
 
-  const student1 = {
-    Html: 'Muito Bom',
-    Css: 'Bom',
-    JavaScript: 'Ótimo',
-    SoftSkills: 'Ótimo',
-  };
+//   const student1 = {
+//     Html: 'Muito Bom',
+//     Css: 'Bom',
+//     JavaScript: 'Ótimo',
+//     SoftSkills: 'Ótimo',
+//   };
   
-  const student2 = {
-    Html: 'Bom',
-    Css: 'Ótimo',
-    JavaScript: 'Ruim',
-    SoftSkills: 'Ótimo',
-    Git: 'Bom', // chave adicionada
-  };
+//   const student2 = {
+//     Html: 'Bom',
+//     Css: 'Ótimo',
+//     JavaScript: 'Ruim',
+//     SoftSkills: 'Ótimo',
+//     Git: 'Bom', // chave adicionada
+//   };
 
-  const skills = (student, objectStudent) =>{
-    const arraySkills = Object.keys(objectStudent);
-    console.log(student);
-    for (index in arraySkills){
-        console.log(`Skill: ${arraySkills[index]} Nivel: ${objectStudent[arraySkills[index]]}`)
-    }
-  }
+//   const skills = (student, objectStudent) =>{
+//     const arraySkills = Object.keys(objectStudent);
+//     console.log(student);
+//     for (index in arraySkills){
+//         console.log(`Skill: ${arraySkills[index]} Nivel: ${objectStudent[arraySkills[index]]}`)
+//     }
+//   }
 
-skills('student1', student1);
-skills('student2', student2);
+// skills('student1', student1);
+// skills('student2', student2);
+
+//----------------------------Parte IV - Object.entries
+
+// const países = {
+//     França: 'Paris',
+//     Brasil: 'Brasília',
+//     Espanha: 'Madrid',
+//     Portugal: 'Lisboa',
+//   };
+//   const pairKeyValue = Object.entries(países);
+//   console.log(pairKeyValue);
+
+//   for(index in pairKeyValue) {
+//     console.log('--------');
+//     console.log('País:', pairKeyValue[index][0]);
+//     console.log('Capital:', pairKeyValue[index][1]);
+//   };
 
