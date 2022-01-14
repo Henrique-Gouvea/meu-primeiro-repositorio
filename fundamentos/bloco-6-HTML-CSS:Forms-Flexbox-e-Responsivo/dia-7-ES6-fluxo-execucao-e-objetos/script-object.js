@@ -4,7 +4,6 @@
 // Modifique o nome da pessoa compradora.
 // Modifique o valor total da compra para R$ 50,00.
 
-
 const order = {
     name: 'Rafael Andrade',
     phoneNumber: '11-98763-1416',
@@ -42,8 +41,8 @@ const order = {
   };
   
   const customerInfo = (order) => {
-    // Adicione abaixo as informações necessárias.
-  
+      const ordem = Object.values(order);
+      console.log(`Ola ${ordem[0]}`);
   }
   
   customerInfo(order);
