@@ -31,3 +31,36 @@ describe('teste remove item do array', () => {
     expect(remove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
   })
 })
+
+// 3 - A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número for divisível por 3 e 5 , retorna "fizz" se for divisível apenas por 3 , retorna "buzz" se divisível apenas por 5 , retorna o próprio número caso não seja divisível por 3 ou 5 e retorna false caso num não seja um número
+// Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado
+// Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado
+// Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado
+// Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado
+// Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
+
+
+const myFizzBuzz = require('./fizzBuzz');
+
+describe('teste divisivel por 3 e 5', () => {
+  it('verifica se o numero e divisivel por 3 e 5 e retorna fizzBuzz', () => {
+    expect(myFizzBuzz(15)).toBe('fizzbuzz');
+    expect(myFizzBuzz(45)).toBe('fizzbuzz');
+  })
+  it('Verifica se e divisivel apenas por 3 e retorna fizz', () => {
+    expect(myFizzBuzz(9)).toBe('fizz');
+    expect(myFizzBuzz(3)).toBe('fizz');
+  })
+  it('Verifica se e divisivel apenas por 5 e retorna buzz', () => {
+    expect(myFizzBuzz(35)).toBe('buzz');
+    expect(myFizzBuzz(5)).toBe('buzz');
+  })
+  it('verifica se numero nao divisivel por 3 e 5 retorna o proprio numero', () => {
+    expect(myFizzBuzz(2)).toBe(2);
+    expect(myFizzBuzz(1)).toBe(1);
+  })
+  it('verifica se e  um numero a entrada se nao for retorna false', () => {
+    expect(myFizzBuzz('5')).toBe(false);
+    expect(myFizzBuzz('teste')).toBe(false);
+  })
+})
