@@ -1,3 +1,9 @@
+//https://tableless.com.br/jasmine-entendendo-os-matchers/
+
+//O LINK ACIMA EXPLICA CADA MATCH EX; toEqual TO EQUAL ...
+
+
+
 const sum = require('./sum');
 const remove = require('./remove');
 
