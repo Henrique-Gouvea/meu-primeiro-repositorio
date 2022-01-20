@@ -105,4 +105,14 @@ console.log(booksOrderedByReleaseYearDesc());
 
 console.log('-------------------------------------5-----------------------------------------')
 
-//5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
+//5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.//1 de janeiro de 1901 e terminou em 31 de dezembro de 2000
+
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  return books.every((livros) => (livros.author.birthYear > 1901) && (livros.author.birthYear < 200));
+}
+
+console.log(everyoneWasBornOnSecXX());
+
+// 6 - Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
