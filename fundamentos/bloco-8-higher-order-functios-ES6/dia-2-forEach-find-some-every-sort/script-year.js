@@ -35,7 +35,7 @@ const books = [
       genre: 'Ficção Científica',
       author: {
         name: 'Frank Herbert',
-        birthYear: 1920,
+        birthYear: 1926,
       },
       releaseYear: 1965,
     },
@@ -45,7 +45,7 @@ const books = [
       genre: 'Terror',
       author: {
         name: 'Stephen King',
-        birthYear: 1947,
+        birthYear: 1891,
       },
       releaseYear: 1986,
     },
@@ -55,7 +55,7 @@ const books = [
       genre: 'Terror',
       author: {
         name: 'H. P. Lovecraft',
-        birthYear: 1890,
+        birthYear: 1891,
       },
       releaseYear: 1928,
     },
@@ -67,7 +67,7 @@ const books = [
 
   function authorBornIn1947() {
     const bookFind =  books.find((livros) => livros.author.birthYear === 1947);
-    return bookFind.author.name;
+    return bookFind;
   }
 
   console.log(authorBornIn1947());
@@ -75,9 +75,9 @@ const books = [
   //2 - Retorne o nome do livro de menor nome.
 
   function smallerName() {
-  let nameBook = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+  let nameBook;
   books.forEach((livro) => {
-    if (livro.name.length < nameBook.length){
+    if (!nameBook || livro.name.length < nameBook.length){
       nameBook = livro.name;
     }
   });
@@ -125,17 +125,20 @@ function someBookWasReleaseOnThe80s() {
 
 console.log (someBookWasReleaseOnThe80s());
 
+console.log('-----------------------------------------------------')
+
 //7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
 
 function authorUnique() {
+  teste = false;
   books.every((livrosEvery) => {
     books.some((livros) => {
-      if (livros.author.birthYear === livrosEvery.author.birthYear){
-        return true;
-      }
+      if (((livros.author.birthYear === livrosEvery.author.birthYear) && (livros.author.name !== livrosEvery.author.name))){
+       teste = true; 
+      };
     })
   })
-  return false;
+  return teste;
 }
 
 console.log(authorUnique());
