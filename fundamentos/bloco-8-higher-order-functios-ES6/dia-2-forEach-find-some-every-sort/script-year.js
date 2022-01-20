@@ -88,5 +88,7 @@ console.log(smallerName());
 // 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
 
 function getNamedBook() {
-  /
+  return books.find((livro) => livro.name.length === 26);
 }
+
+console.log(getNamedBook());
