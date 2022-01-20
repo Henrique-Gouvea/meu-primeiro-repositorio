@@ -75,9 +75,18 @@ const books = [
   //2 - Retorne o nome do livro de menor nome.
 
   function smallerName() {
-  let nameBook;
-  // escreva aqui o seu código
-
-  // Variável nameBook que receberá o valor do menor nome;
+  let nameBook = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+  books.forEach((livro) => {
+    if (livro.name.length < nameBook.length){
+      nameBook = livro.name;
+    }
+  });
   return nameBook;
+  }
+console.log(smallerName());
+
+// 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
+
+function getNamedBook() {
+  /
 }
