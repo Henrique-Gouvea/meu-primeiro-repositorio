@@ -92,3 +92,17 @@ function getNamedBook() {
 }
 
 console.log(getNamedBook());
+
+console.log('-------------------------------------4-----------------------------------------')
+
+//4 - Ordene os livros por data de lançamento em ordem decrescente.
+
+function booksOrderedByReleaseYearDesc() {
+  return books.sort((livroA, livroB) => livroA.releaseYear < livroB.releaseYear);
+}
+
+console.log(booksOrderedByReleaseYearDesc());
+
+console.log('-------------------------------------5-----------------------------------------')
+
+//5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
