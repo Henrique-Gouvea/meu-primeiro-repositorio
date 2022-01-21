@@ -120,3 +120,23 @@ const sixtyMore = (livros) => (2022 - livros.releaseYear) > 60;
 const moreSixtyYears = books.filter(sixtyMore).sort((livroA, livroB) => livroA.releaseYear - livroB.releaseYear);
 
 console.log(moreSixtyYears);
+
+console.log('--------------------------------------------------------------------------------')
+
+//5 - Crie um array em ordem alfabética apenas com os nomes de todas as pessoas autoras de ficção científica ou fantasia.
+
+const alphabeticFantasyFictionAuthor = filmesFiccaoFantasia.map((livros) => livros.author.name).sort();
+
+console.log(alphabeticFantasyFictionAuthor);
+
+console.log('--------------------------------------------------------------------------------')
+
+// 6 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
+
+const nameSixtyMore = moreSixtyYears.map((livros) => livros.name);
+
+console.log(nameSixtyMore);
+
+console.log('--------------------------------------------------------------------------------')
+
+//7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais (terminam com um ponto).
