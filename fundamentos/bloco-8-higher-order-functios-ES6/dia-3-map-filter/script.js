@@ -98,3 +98,25 @@ function nameAndAge(livros) {
 };
 
 console.log(books.map(nameAndAge).sort((obj1, obj2) => obj1.age - obj2.age));
+
+//3 - Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
+
+console.log('---------------------------------------------------------------------------------')
+
+function fantasyOrScienceFiction(livros) {
+    return livros.genre === 'Fantasia' || livros.genre === 'Ficção Científica';
+  }
+
+  const filmesFiccaoFantasia = books.filter(fantasyOrScienceFiction);
+
+  console.log(filmesFiccaoFantasia);
+
+  console.log('--------------------------------------------------------------------------------')
+
+//   4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+
+const sixtyMore = (livros) => (2022 - livros.releaseYear) > 60;
+
+const moreSixtyYears = books.filter(sixtyMore).sort((livroA, livroB) => livroA.releaseYear - livroB.releaseYear);
+
+console.log(moreSixtyYears);
