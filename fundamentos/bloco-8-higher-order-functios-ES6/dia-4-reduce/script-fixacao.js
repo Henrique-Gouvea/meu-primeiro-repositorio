@@ -90,3 +90,9 @@ const estudantes = [
       ],
     },
   ];
+
+//elatório que diz em qual matéria o estudante foi melhor.
+
+const notas = (estu) => estu.materias.nota;
+
+console.log(estudantes.map(notas));
