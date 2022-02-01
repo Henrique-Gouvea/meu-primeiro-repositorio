@@ -55,6 +55,9 @@ async function catchThemAll() {
     'abre',
     'bulbasaur',
     'espeon',
+    'vulpix',
+    'vaporeon',
+    'jolteon',
   ];
 
   for (const pokemon of pokedex) {
