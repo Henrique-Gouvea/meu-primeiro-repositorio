@@ -15,6 +15,7 @@ a {
     color: blanchedalmond;
     border-radius: 5px;
     padding: 5px 30px;
+    text-decoration: none;
 }
 
 .cardDad {
@@ -23,6 +24,13 @@ a {
 }
 
 .Electric {
-    background-color: yellow;
+    background-image: url(../images/eletric.jpeg);
 }
 
+.Fire {
+    background-image: url(../images/fire.png);
+}
+
+.Bug {
+    background-image: url(../images/bug.jpg);
+}
