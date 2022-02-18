@@ -4,8 +4,9 @@ import Card from "./Card";
 
 class List extends Component {
     render() {
-        console.log(this.props);
-        return pokemons.map((poke) => <Card pokeInfo={poke}/>)
+        return <div className="cardDad">
+                {pokemons.map((poke) => <Card key={poke.id} pokeInfo={poke}/>)}
+            </div>
     }
 }
 

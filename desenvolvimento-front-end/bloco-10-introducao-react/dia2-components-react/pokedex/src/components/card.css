@@ -1,0 +1,28 @@
+.card {
+    border: 1px solid black;
+    width: 200px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+p {
+    text-align: left;
+    padding: 1px;
+}
+
+a {
+    background-color: black;
+    color: blanchedalmond;
+    border-radius: 5px;
+    padding: 5px 30px;
+}
+
+.cardDad {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Electric {
+    background-color: yellow;
+}
+
