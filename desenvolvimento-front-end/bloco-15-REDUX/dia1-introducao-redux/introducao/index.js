@@ -1,5 +1,5 @@
-const Redux = require('redux');
-const store = Redux.createStore();
+import { createStore as _createStore } from 'redux';
+const store = _createStore();
 
 const fazerLogin = (email) => ({type: "LOGIN", email});
   
